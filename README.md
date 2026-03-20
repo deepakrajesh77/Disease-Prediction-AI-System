@@ -1,2 +1,2 @@
 # Disease-Prediction-AI-System
-An AI-powered disease prediction system that analyzes user symptoms to provide possible health insights and early risk assessment.
+This project is an AI-based disease prediction system designed to assist users in identifying potential health conditions based on their symptoms. By leveraging machine learning algorithms, the system analyzes input data and provides probable disease predictions along with basic guidance.
