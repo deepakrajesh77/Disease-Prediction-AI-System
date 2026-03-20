@@ -1,0 +1,61 @@
+Disease,Symptom1,Symptom2,Symptom3,Symptom4,Symptom5
+
+common cold,sneezing,runny nose,cough,sore throat,headache
+common cold,sneezing,congestion,runny nose,weakness,cough
+
+flu,fever,cough,body pain,fatigue,headache
+flu,fever,chills,weakness,cough,sore throat
+
+fever,high temperature,headache,fatigue,body pain,weakness
+fever,fever,chills,sweating,headache,fatigue
+
+cough,cough,throat irritation,hoarseness,runny nose,fatigue
+cough,cough,phlegm,chest discomfort,weakness,breathing difficulty
+
+sore throat,sore throat,pain while swallowing,fever,headache,weakness
+sore throat,throat irritation,cough,fever,fatigue,runny nose
+
+headache,head pain,dizziness,nausea,fatigue,blurred vision
+headache,headache,stress,sensitivity to light,weakness,dizziness
+
+vomiting,vomiting,nausea,stomach discomfort,fatigue,weakness
+vomiting,nausea,loss of appetite,stomach pain,dizziness,fatigue
+
+diarrhea,loose stools,abdominal pain,dehydration,weakness,fatigue
+diarrhea,frequent stools,stomach cramps,nausea,weakness,dehydration
+
+acidity,heartburn,stomach pain,bloating,nausea,burping
+acidity,acid reflux,stomach discomfort,burning sensation,nausea,fatigue
+
+indigestion,stomach pain,bloating,gas,nausea,burping
+indigestion,fullness,stomach discomfort,gas,loss of appetite,nausea
+
+constipation,hard stools,abdominal pain,bloating,discomfort,weakness
+constipation,infrequent bowel movements,stomach pain,bloating,fatigue,discomfort
+
+allergy,sneezing,itching,runny nose,watery eyes,congestion
+allergy,skin rash,itching,redness,sneezing,runny nose
+
+skin rash,red spots,itching,swelling,irritation,dry skin
+skin rash,skin redness,itching,burning sensation,swelling,dryness
+
+ear infection,ear pain,hearing difficulty,fever,headache,irritation
+ear infection,ear discharge,pain,fever,itching,hearing loss
+
+eye infection,red eyes,itching,watering,swelling,irritation
+eye infection,eye redness,discharge,itching,blurred vision,watering
+
+toothache,tooth pain,swelling,gum pain,sensitivity,headache
+toothache,sharp pain,swelling,bleeding gums,sensitivity,discomfort
+
+muscle pain,body pain,stiffness,fatigue,weakness,swelling
+muscle pain,aches,cramps,stiffness,fatigue,weakness
+
+back pain,lower back pain,stiffness,difficulty moving,weakness,fatigue
+back pain,spine pain,stiffness,muscle tightness,discomfort,fatigue
+
+dehydration,thirst,dry mouth,fatigue,dizziness,weakness
+dehydration,low urine,dry skin,fatigue,headache,weakness
+
+heat exhaustion,heavy sweating,weakness,dizziness,nausea,headache
+heat exhaustion,fatigue,thirst,dizziness,cramps,weakness

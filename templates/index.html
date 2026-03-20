@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Disease Predictor</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial;
+            background-color: black;
+            color: white;
+        }
+
+        /* HEADER */
+        header {
+            padding: 30px;
+            text-align: center;
+            border-bottom: 1px solid gray;
+            
+            border: 2px solid #4facfe;
+            border-radius: 12px;
+            box-shadow: 0 0 15px rgba(79, 172, 254, 0.7);
+
+        }
+
+        header h1 {
+            font-size: 40px;
+            margin: 0;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        header p {
+            color: gray;
+            margin-top: 10px;
+        }
+
+        /* MAIN SECTION */
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 30px;
+            font-size: large;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section h2 {
+            border-left: 5px solid #4facfe;
+            padding-left: 10px;
+        }
+
+        /* INPUT BOX */
+        input {
+            width: 100%;
+            padding: 12px;
+            margin-top: 10px;
+            border-radius: 5px;
+            border: none;
+            border-color: blue;
+        }
+
+        button {
+            margin-top: 15px;
+            padding: 12px 20px;
+            border: none;
+            background: #4facfe;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background: #007bff;
+        }
+
+        .result {
+           
+
+         
+    display: block;
+    margin: 20px auto;
+    padding: 15px;
+    width: 100%;            
+    max-width: 520px;         
+    box-sizing: border-box;   
+    
+    background: #111;
+    border: 2px solid #4facfe;
+    border-radius: 12px;
+
+    color: #00ffcc;
+    font-size: 18px;
+    text-align: center;
+
+    box-shadow: 0 0 15px rgba(79, 172, 254, 0.7);
+}
+     
+    </style>
+</head>
+
+<body>
+
+<!-- HEADER -->
+<header>
+    <h1>DISEASE PREDICTOR</h1>
+    <p>Your AI-powered health assistant</p>
+</header>
+
+<div class="container">
+
+    <!-- ABOUT SECTION -->
+    <div class="section">
+        <h2>About Diseases</h2>
+        <p>
+            Diseases are abnormal conditions that affect the body or mind.
+            They can be caused by infections, lifestyle, genetics, or environmental factors.
+            Early detection is important to prevent serious complications.
+        </p>
+    </div>
+
+    <!-- CONSEQUENCES -->
+    <div class="section">
+        <h2>Consequences of Diseases</h2>
+        <p>
+            Diseases can lead to physical discomfort, emotional distress, and financial burden.
+            They may reduce quality of life and can be life-threatening if not treated properly.
+            Prevention and timely medical care are crucial to minimize these consequences.
+        </p>
+   <!-- PREDICTION -->
+<div class="result" style="text-align:center;">
+    <h2>Check Your Disease</h2>
+
+    <form action="/predict" method="post">
+        
+        <!-- Dropdown example -->
+        <select name="quick_symptom" style="padding:10px; margin-bottom:10px; width:220px;">
+            <option value="">Select common symptom</option>
+            <option value="=cough">Cough</option>
+            <option value="body pain">Body Pain</option>
+            <option value="headache">Headache</option>
+            <option value="fever">Fever</option>
+        </select>
+
+        <br>
+
+        <!-- Main input -->
+        <input type="text" name="symptoms"
+        placeholder="Enter symptoms separated by commas "
+        style="width:250px;">
+
+        <br>
+
+        <button type="submit">Predict</button>
+    </form>
+
+   {% if prediction %}
+<div class="result">
+    <p><strong>Disease:</strong> {{ prediction }}</p>
+</div>
+
+<div class="result">
+    <p><strong>Description:</strong></p>
+    <p>{{ description }}</p>
+</div>
+
+
+{% endif %}
+</div>
+
+<div class="section">
+        <h2>DISCLAIMER</h2>
+        <p>
+            Results are generated using AI and may not always be accurate or reliable.
+            Please consult a qualified healthcare professional for proper evaluation and advice.
+        </p>
+</div>
+
+
